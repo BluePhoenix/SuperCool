@@ -32,8 +32,16 @@ class SuperCoolUITests: XCTestCase {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let app = XCUIApplication()
-        XCTAssert(app.buttons["Make Me Super Cool"].exists)
-        XCTAssertEqual(app.images.count, 2)
+        let superCoolButton = app.buttons["Make Me Super Cool"]
+        XCTAssert(superCoolButton.hittable)
+        XCTAssertFalse(app.images.elementBoundByIndex(0).hittable)
+        XCTAssertFalse(app.images.elementBoundByIndex(1).hittable)
+        
+        superCoolButton.tap()
+        
+        XCTAssert(app.images.elementBoundByIndex(0).hittable)
+        XCTAssert(app.images.elementBoundByIndex(1).hittable)
+        XCTAssertFalse(superCoolButton.hittable)
     }
     
 }

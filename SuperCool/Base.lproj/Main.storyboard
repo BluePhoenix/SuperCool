@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="9zw-h3-899">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="9zw-h3-899">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                             </imageView>
@@ -26,9 +26,12 @@
                                 <rect key="frame" x="229" y="285" width="142" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Make Me Super Cool"/>
+                                <connections>
+                                    <action selector="makeMeSuperCoolTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BYV-qC-Hwv"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Boom-App" translatesAutoresizingMaskIntoConstraints="NO" id="3Uv-Eb-pEA">
-                                <rect key="frame" x="20" y="28" width="560" height="51"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Boom-App" translatesAutoresizingMaskIntoConstraints="NO" id="3Uv-Eb-pEA">
+                                <rect key="frame" x="20" y="28" width="560" height="71"/>
                                 <animations/>
                             </imageView>
                         </subviews>
@@ -48,6 +51,11 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9zw-h3-899" secondAttribute="bottom" id="uPL-na-ugc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="9zw-h3-899" id="AQP-Nb-vez"/>
+                        <outlet property="coolLogoImage" destination="3Uv-Eb-pEA" id="vFO-yp-zsS"/>
+                        <outlet property="makeMeSuperCoolButton" destination="0Pv-t9-tCg" id="5Aa-QR-gMr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -55,7 +63,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Boom-App" width="270" height="51"/>
+        <image name="Boom-App" width="230" height="71"/>
         <image name="background" width="999" height="706"/>
     </resources>
 </document>

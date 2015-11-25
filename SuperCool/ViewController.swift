@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var coolLogoImage: UIImageView!
+    @IBOutlet weak var makeMeSuperCoolButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +24,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func makeMeSuperCoolTapped(sender: AnyObject) {
+        backgroundImage.hidden = false
+        coolLogoImage.hidden = false
+        makeMeSuperCoolButton.hidden = true
+    }
 
 }
 
