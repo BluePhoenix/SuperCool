@@ -488,6 +488,7 @@
 				CE1F05A21C05671700870978 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE1F05A31C05671700870978 /* Build configuration list for PBXNativeTarget "SuperCoolTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +497,7 @@
 				CE1F05A51C05671700870978 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE1F05A61C05671700870978 /* Build configuration list for PBXNativeTarget "SuperCoolUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +506,7 @@
 				CE1F05A81C05671700870978 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
