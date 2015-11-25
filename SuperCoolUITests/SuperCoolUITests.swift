@@ -33,6 +33,7 @@ class SuperCoolUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let app = XCUIApplication()
         XCTAssert(app.buttons["Make Me Super Cool"].exists)
+        XCTAssertEqual(app.images.count, 1)
     }
     
 }
